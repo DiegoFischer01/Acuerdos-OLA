@@ -38,9 +38,9 @@ function leerNumero(prompt) {
 }
 
 function main() {
-  const topeOLA = leerNumero('Ingrese el monto de OLA: ');
+  const topeOLA = leerNumero('Ingrese el monto Tope de la OLA actual (NO se admiten "puntos(.) o "comas"(,)"): ');
   const porcentajeExcedente = leerNumero('Ingrese el porcentaje de la quita al excedente (por ejemplo, 20 para 20%): ');
-  const montoReclamo = leerNumero('Ingrese el monto total del reclamo: ');
+  const montoReclamo = leerNumero('Ingrese el monto total del reclamo (utilice "puntos(.) o "comas"(,)" SOLO para los decimales): ');
   const resultado = calcularOLA(montoReclamo, topeOLA, porcentajeExcedente);
 
   console.log(`Monto Inicial: ${resultado.montoInicial.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
