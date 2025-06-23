@@ -32,7 +32,7 @@ function leerNumero(prompt) {
     if (!isNaN(numero)) {
       break;
     }
-    console.log('Ingrese un número válido');
+    console.log('Ingrese un número valido');
   }
   return numero;
 }
